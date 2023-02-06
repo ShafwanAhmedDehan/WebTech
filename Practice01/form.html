@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title style="text-align: center;">Form for Personal Info</title>
+</head>
+<body style="background-color: rgb(204, 255, 255);">
+	<h2 style="text-align: center;">Personal Information</h2>
+	<form method="POST" action="FormData.php" novalidate>
+		<label for="fname">First Name : </label>
+		<input type="text" id="fname" name="fname">
+		<br><br>
+		<label for="lname">Last Name : </label>
+		<input type="text" id="lname" name="lname">
+		<br><br>
+		<label for="email">Email : </label>
+		<input type="text" id="email" name="email">
+		<br><br>
+		<label for="gender">Gender : </label>
+		<input type="radio" id="gender" name="gender" value="Male">
+		<label for="gender">Male</label>
+		<input type="radio" id="gender" name="gender" value="Female">
+		<label for="gender">Female</label>
+		<input type="radio" id="gender" name="gender" value="Other">
+		<label for="gender">Other</label>
+		<br><br>
+		<label for="age">Age Range : </label>
+		<select id="age" name="agerange">
+			<option value="0-18">0-18</option>
+			<option value="19-25">19-25</option>
+			<option value="26-30">26-30</option>
+			<option value="31-40">31-40</option>
+			<option value="41-50">41-50</option>
+			<option value="51-100">51-100</option>
+		</select>
+
+		<br><br>
+		<label for="vehicle">Select Own Vehicle : </label>
+		<label for="car">Car</label>
+		<input type="checkbox" id="car" name="vehicle" value="Car">
+		<label for="bike">Bike</label>
+		<input type="checkbox" id="bike" name="vehicle" value="Bike">
+		<label for="truck">Truck</label>
+		<input type="checkbox" id="truck" name="vehicle" value="Truck">
+		<label for="none">None</label>
+		<input type="checkbox" id="none" name="vehicle" value="None">
+		<br><br>
+		<label for="birthday">Date of Birth : </label>
+		<input type="date" id="birthday" name="birthday">
+		<br><br>
+		<input style="text-align: center;" type="submit" value="Submit">
+		<input type="reset" value="Reset">
+
+	</form>
+
+</body>
+</html>
